@@ -400,7 +400,7 @@ def main():
                     retain=False
                 )
 
-            if config['general']['sleep_for'] > 0 and len(missing_readings) == 0:
+            if config['general']['sleep_for'] > 0:
                 # We have our readings, so we can sleep
                 if LOG_LEVEL >= 3:
                     logger.info('All readings received.')
